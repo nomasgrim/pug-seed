@@ -64,7 +64,7 @@ gulp.task('vendor-scripts', function(){
 gulp.task('build-scripts', ['vendor-scripts', 'app-scripts']);
 
 gulp.task('build-clean', function(cb){
-  return gulp.src('htdocs').pipe(clean());
+  return gulp.src('build/**.*').pipe(clean());
 });
 
 gulp.task('build-stylus', ['stylus', 'linenos', 'sourcemaps-inline']);
